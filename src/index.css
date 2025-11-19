@@ -1,0 +1,116 @@
+/* Global styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e5e5e5; /* soft light gray */
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 0;
+}
+
+/* App wrapper for spacing */
+.app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ------------------ USE MEMO HOOK ------------------ */
+
+.usememo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fca311;
+  border-radius: 20px;
+}
+
+.usememo-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Input Field */
+.usememo-card input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #bbbbbb;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.usememo-card input[type="text"]:focus {
+  border-color: #fca311;
+  box-shadow: 0 0 6px rgba(252, 163, 17, 0.4);
+}
+
+/* Squared value text */
+.usememo-card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #14213d;
+  font-weight: 600;
+}
+
+/* ------------------ USE CALLBACK HOOK ------------------ */
+
+.usecallback-container {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usecallback-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Count number */
+.usecallback-card h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #14213d;
+}
+
+/* Buttons */
+.usecallback-card button {
+  padding: 12px 24px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fca311;
+  color: #14213d;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.usecallback-card button:hover {
+  background-color: #ffb737;
+}
+
+.usecallback-card button:active {
+  transform: scale(0.95);
+  background-color: #e29509;
+}
