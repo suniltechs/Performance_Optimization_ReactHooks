@@ -1,16 +1,36 @@
-# React + Vite
+# 🚀 Performance Optimization Hooks in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React provides specialized hooks to improve application performance by preventing unnecessary re-renders, memoizing expensive operations, and stabilizing function references.
+This guide explains all important performance optimization hooks with examples and best practices.
 
-Currently, two official plugins are available:
+## 🧠 Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - Performance optimization hooks in React are used to:
+ - Avoid unnecessary component re-renders
+ - Cache expensive calculations
+ - Stabilize function identities
+ - Improve UI responsiveness
+ - Optimize large lists, complex components, and slow computations
 
-## React Compiler
+These hooks do NOT improve performance by default. They help only when used at the right time.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 When to Use These Hooks
 
-## Expanding the ESLint configuration
+Use performance optimization hooks when:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  ✔ Your component re-renders many times <br/>
+  ✔ You're doing heavy computations <br/>
+  ✔ Parent components cause unnecessary renders <br/>
+  ✔ You're passing callbacks deep into components <br/>
+  ✔ You experience UI lag <br/>
+
+## 📝 Final Notes
+
+Performance optimization in React is context-based.
+Use these hooks only when:
+
+🔥 You measure an issue <br/>
+🔥 You see unnecessary renders <br/>
+🔥 You handle large data or heavy components <br/>
+
+Correctly applied, these hooks make your app faster, smoother, and more efficient.
