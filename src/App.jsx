@@ -2,6 +2,8 @@ import React from 'react'
 import UseMemoHook from './UseMemoHook'
 import UseCallbackHook from './UseCallbackHook'
 import UseReducerHook from './UseReducerHook'
+import UseLayoutEffectHook from './UseLayoutEffectHook'
+import NavBar from './NavBar'
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <UseMemoHook />
       <UseCallbackHook />
       <UseReducerHook />
+      <UseLayoutEffectHook />
+      <NavBar />
     </div>
   )
 }
