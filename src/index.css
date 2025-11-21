@@ -114,3 +114,55 @@ body {
   transform: scale(0.95);
   background-color: #e29509;
 }
+
+/* ------------------ USE REDUCER HOOK ------------------ */
+
+.usereducer-container {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usereducer-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+/* Count text */
+.usereducer-card h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #14213d;
+  font-weight: 700;
+}
+
+/* Buttons */
+.usereducer-card button {
+  padding: 12px 24px;
+  margin: 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fca311;
+  color: #14213d;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.usereducer-card button:hover {
+  background-color: #ffb737;
+}
+
+.usereducer-card button:active {
+  transform: scale(0.95);
+  background-color: #e29509;
+}
+

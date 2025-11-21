@@ -5,7 +5,7 @@ const UseMemoHook = () => {
     const [number, setNumber] = useState(0)
 
     const doubleNumber = useMemo(() => {
-        console.log('Calculating...')
+        // console.log('Calculating...')
         return number * number
     }, [number])
 
