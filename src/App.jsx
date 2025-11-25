@@ -3,7 +3,9 @@ import UseMemoHook from './UseMemoHook'
 import UseCallbackHook from './UseCallbackHook'
 import UseReducerHook from './UseReducerHook'
 import UseLayoutEffectHook from './UseLayoutEffectHook'
-import NavBar from './NavBar'
+import ClassBasedComponent from './ClassBasedComponent'
+import FunctionalComponent from './FunctionalComponent'
+
 
 const App = () => {
   return (
@@ -12,7 +14,8 @@ const App = () => {
       <UseCallbackHook />
       <UseReducerHook />
       <UseLayoutEffectHook />
-      <NavBar />
+      <ClassBasedComponent />
+      <FunctionalComponent />
     </div>
   )
 }
